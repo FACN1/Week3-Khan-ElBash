@@ -5,7 +5,7 @@ Khan El-Bash's week 3 app.
 ## Outline
 Our app will:
 - let the user enter a search term
-- use the Online Movie Database (OMDb) API to display information about the film most relevant to the search term
+- use the Open Movie Database (OMDb) API to get information about the film which is most relevant to the search term (according to OMDb)
 - use the Giphy API to display GIFs relating to the film
 
 ## Initial Plan
@@ -16,7 +16,7 @@ Our app will:
 
 ## User Stories
 A user logs on to the website and wants to search for their favourite film. They should:
-1. Be able to easily do the search
+1. Be able to easily use the search feature
 2. See some basic information about the film
 3. See some super cool gifs related to film
 4. Be inspired to search for another film after such a great experience
