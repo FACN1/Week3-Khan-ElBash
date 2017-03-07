@@ -1,10 +1,10 @@
 var render = (function() {
 
-  var MovieInfo = function(response) {
+  var renderMovieInfo = function(response) {
 
   }
 
-  var MovieGIF = function(response) {
+  var renderMovieGIF = function(response) {
 
   }
 
