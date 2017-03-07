@@ -1,16 +1,16 @@
-var render = (function() {
+var Render = (function() {
 
   var renderMovieInfo = function(response) {
 
-  }
+  };
 
   var renderMovieGIF = function(response) {
 
-  }
+  };
 
   return {
-    MovieInfo: MovieInfo,
-    MovieGIF: MovieGIF
+    renderMovieInfo: renderMovieInfo,
+    renderMovieGIF: renderMovieGIF
   }
 
 })();
