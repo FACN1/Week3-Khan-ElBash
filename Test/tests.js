@@ -1,7 +1,7 @@
 QUnit.module( "renderMovieInfo function tests" );
 QUnit.test( "renderMovieInfo test", function( assert ) {
   var movieInfo = document.getElementsByClassName('infoMovie')[0];
-  console.log(movieInfo);
+  
   assert.equal(movieInfo.innerHTML,"","movieInfo is empty");
   Render.renderMovieInfo(Fixtures.movie1)
   assert.notEqual(movieInfo.innerHTML,"", "movieInfo is not empty");
