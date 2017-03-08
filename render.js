@@ -1,7 +1,4 @@
 var Render = (function() {
-  document.querySelector('button').addEventListener('submit', function(event){
-    event.preventDefault();
-  });
 
   var renderMovieInfo = function(response) {
     var movieInfoDiv = document.getElementsByClassName('infoMovie')[0];
