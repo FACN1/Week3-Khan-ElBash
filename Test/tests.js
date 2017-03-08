@@ -10,21 +10,21 @@ var gifContainer = document.querySelector('.giphyMovie');
 QUnit.test( "this test is to check if the div is empty", function( assert ) {
   assert.equal(gifContainer.innerHTML, "", "the div should be empty" );
 });
-Render.renderMovieGIF([]);
+Render.renderMovieGIF(null, []);
 QUnit.test( "this test checks if the div remains empty", function( assert ) {
   assert.equal(gifContainer.innerHTML, "", "the div should be empty" );
 });
 QUnit.test( "this test is to check if the div has 1 gif", function( assert ) {
   var expectedOutput = '<img src=\"http://media2.giphy.com/media/FiGiRei2ICzzG/100w.gif\">';
   var gifUrl = "http://media2.giphy.com/media/FiGiRei2ICzzG/100w.gif";
-  Render.renderMovieGIF([gifUrl])
+  Render.renderMovieGIF(null, [gifUrl])
   assert.equal(gifContainer.innerHTML, expectedOutput, "the div should have 1 img or gif" );
 
 });
 QUnit.test( "this test is to check if the div has 1 gif", function( assert ) {
   var expectedOutput = '<img src=\"http://media2.giphy.com/media/FiGiRei2ICzzG/100w.gif\">';
   var gifUrl = "http://media2.giphy.com/media/FiGiRei2ICzzG/100w.gif";
-  Render.renderMovieGIF([gifUrl])
+  Render.renderMovieGIF(null, [gifUrl])
   assert.equal(gifContainer.innerHTML, expectedOutput, "the div should have 1 img or gif" );
 
 });

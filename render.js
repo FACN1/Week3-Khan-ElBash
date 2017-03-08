@@ -4,9 +4,13 @@ var Render = (function() {
 
   };
 
-  var renderMovieGIF = function(gifUrls) {
-    // gifUrls is an array of gif urls
-    // this fills up the html page
+  var renderMovieGIF = function(error, result) {
+    if (error){
+      console.error(error);
+      return;
+    }
+    var gifUrls = prepareGIFUrls(result);
+    
     var gifContainer = document.querySelector('.giphyMovie');
     gifContainer.innerHTML = "";
     for (var i = 0 ; i < gifUrls.length; i++){
