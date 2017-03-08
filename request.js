@@ -1,6 +1,7 @@
 var Request = (function () {
 
   var makeRequest = function(method, url, callback) {
+    // callback should be a function which takes (error, result)
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4 && xhr.status === 200){
@@ -17,7 +18,6 @@ var Request = (function () {
     }
     xhr.open(method, url);
     xhr.send();
-
   }
 
   return {
