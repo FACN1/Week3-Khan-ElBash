@@ -6,6 +6,7 @@ var Render = (function() {
       return error;
     }
     var movieInfoDiv = document.getElementsByClassName('infoMovie')[0];
+    movieInfoDiv.innerHTML = "";
     var titleHeaderElement = document.createElement("h2");
     titleHeaderElement.innerHTML = response.Title;
     movieInfoDiv.appendChild(titleHeaderElement);
