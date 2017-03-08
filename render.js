@@ -4,12 +4,8 @@ var Render = (function() {
 
   };
 
-  var prepareGIFUrls = function (error, result) {
-    // result is in the format of e.g. http://api.giphy.com/v1/gifs/search?q=titanic&api_key=dc6zaTOxFJmzC
-    if (error) {
-      console.log(error);
-      return
-    }
+  var prepareGIFUrls = function (response) {
+    // response is in the format of e.g. http://api.giphy.com/v1/gifs/search?q=titanic&api_key=dc6zaTOxFJmzC
     var gifUrls = [];
 
     // numberOfUrls is 3 or number of results (if less than 3)
@@ -21,8 +17,8 @@ var Render = (function() {
     return gifUrls;
   };
 
-  var renderMovieGIF = function(gifUrls) {
-
+  var renderMovieGIF = function(error, result) {
+    
   };
 
   return {
