@@ -1,0 +1,23 @@
+body{
+  background: rgba(0 ,0 ,0 ,0.2);
+}
+input{
+  margin-right: 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 10px 10px 5px #888888;
+}
+button{
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 10px 10px 5px #888888;
+}
+form{
+  margin-top: 30px;
+  text-align: center;
+}
+.infoMovie{
+  background: #ADD8E6;
+}
