@@ -10,7 +10,7 @@ document.querySelector('form').addEventListener('submit', function(event){
 
   Request.makeRequest(
     'GET',
-    'http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=test' + searchQuery,
+    'http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=' + searchQuery,
     Render.renderMovieGIF
   );
 
