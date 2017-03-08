@@ -9,16 +9,16 @@ var Render = (function() {
     var gifUrls = [];
 
     // numberOfUrls is 3 or number of results (if less than 3)
-    var numberOfUrls = Math.min(result.data.length, 3);
+    var numberOfUrls = Math.min(response.data.length, 3);
 
     for (var i = 0; i < numberOfUrls; i++) {
-      gifUrls[i] = result.data[i].images.fixed_width_small.url;
+      gifUrls[i] = response.data[i].images.fixed_width_small.url;
     }
     return gifUrls;
   };
 
   var renderMovieGIF = function(error, result) {
-    
+
   };
 
   return {
