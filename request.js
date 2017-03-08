@@ -18,6 +18,7 @@ var Request = (function () {
     xhr.open(method, url);
     xhr.send();
 
+    // need to implement this
   }
 
   return {
