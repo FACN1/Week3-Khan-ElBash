@@ -8,7 +8,9 @@ var Render = (function() {
     var titleHeaderElement = document.createElement("h2");
     titleHeaderElement.innerHTML = response.Title;
     movieInfoDiv.appendChild(titleHeaderElement);
-    console.log(response.Title);
+    var plot = document.createElement("p");
+    plot.innerHTML = response.Plot;
+    movieInfoDiv.appendChild(plot);
   };
 
   var renderMovieGIF = function(response) {
