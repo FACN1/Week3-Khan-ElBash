@@ -1,6 +1,10 @@
 var Render = (function() {
 
-  var renderMovieInfo = function(response) {
+  var renderMovieInfo = function(error, response) {
+    if (error) {
+      console.log(error);
+      return error;
+    }
     var movieInfoDiv = document.getElementsByClassName('infoMovie')[0];
     var titleHeaderElement = document.createElement("h2");
     titleHeaderElement.innerHTML = response.Title;
