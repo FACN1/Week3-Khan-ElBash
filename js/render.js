@@ -1,6 +1,6 @@
 var Render = (function() {
 
-  var renderMovieInfo = function(error, response) {
+  var renderMovieInfo = function(error, MovieInfo) {
     if (error) {
       console.log(error);
       return error;
@@ -8,20 +8,20 @@ var Render = (function() {
     var movieInfoDiv = document.getElementsByClassName('infoMovie')[0];
     movieInfoDiv.innerHTML = "";
     var titleHeaderElement = document.createElement("h2");
-    titleHeaderElement.innerHTML = response.Title;
+    titleHeaderElement.innerHTML = MovieInfo.Title;
     movieInfoDiv.appendChild(titleHeaderElement);
     var plot = document.createElement("p");
-    plot.innerHTML = response.Plot;
+    plot.innerHTML = MovieInfo.Plot;
     movieInfoDiv.appendChild(plot);
 
   };
 
-  var renderMovieGIF = function(error, result) {
+  var renderMovieGIF = function(error, MovieGIF) {
     if (error){
       console.error(error);
       return;
     }
-    var gifUrls = prepareGIFUrls(result);
+    var gifUrls = prepareGIFUrls(MovieGIF);
 
     var gifContainer = document.querySelector('.giphyMovie');
     gifContainer.innerHTML = "";
@@ -38,7 +38,6 @@ var Render = (function() {
     var gifUrls = [];
 
     // numberOfUrls is 3 or number of results (if less than 3)
-    console.log(response);
     var numberOfUrls = Math.min(response.data.length, 3);
 
     for (var i = 0; i < numberOfUrls; i++) {
