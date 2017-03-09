@@ -1,13 +1,13 @@
 body{
   background: rgba(0 ,0 ,0 ,0.2);
 }
-input{
+.submitInput{
   margin-right: 30px;
   border-radius: 5px;
   font-size: 20px;
   box-shadow: 10px 10px 5px #888888;
 }
-button{
+.submitButton{
   padding: 10px;
   border-radius: 2px;
   font-size: 20px;
@@ -18,6 +18,14 @@ form{
   margin-top: 30px;
   text-align: center;
 }
-.infoMovie{
-  background: #ADD8E6;
+.headerCss1{
+  text-align: center;
+}
+.titleCss{
+  font-family: 'Bree Serif', serif;
+  color: blue;
+}
+.pCss{
+  font-family: 'Righteous', cursive;
+  color: blue;
 }
