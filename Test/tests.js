@@ -1,11 +1,11 @@
 QUnit.module( "renderMovieInfo function tests" );
 QUnit.test( "renderMovieInfo test", function( assert ) {
-  var movieInfo = document.getElementsByClassName('infoMovie')[0];
-  
+  var movieInfo = document.querySelector(".infoMovie");
+
   assert.equal(movieInfo.innerHTML,"","movieInfo is empty");
   Render.renderMovieInfo(Fixtures.movie1)
   assert.notEqual(movieInfo.innerHTML,"", "movieInfo is not empty");
-
+  console.log(movieInfo);
 });
 
 /*========================================================================================================*/

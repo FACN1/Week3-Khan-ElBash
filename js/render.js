@@ -5,15 +5,15 @@ var Render = (function() {
       console.log(error);
       return error;
     }
-    var movieInfoDiv = document.getElementsByClassName('infoMovie')[0];
+    var movieInfoDiv = document.querySelector('.infoMovie');
     movieInfoDiv.innerHTML = "";
+    console.log(movieInfoDiv);
     var titleHeaderElement = document.createElement("h2");
     titleHeaderElement.innerHTML = response.Title;
     movieInfoDiv.appendChild(titleHeaderElement);
     var plot = document.createElement("p");
     plot.innerHTML = response.Plot;
     movieInfoDiv.appendChild(plot);
-
   };
 
   var renderMovieGIF = function(error, result) {
