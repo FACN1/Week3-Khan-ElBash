@@ -32,8 +32,8 @@ A user logs on to the website and wants to search for their favourite film. They
 - Make the search box autofill with films
 
 ## How did we do it?
--first we added the project file and build some skeletons for the modules.
--then we started working on html files.
--We started making tests for the modules and functions
--after the test building we started writing the functions.
--fixing some damn conflicts.
+- first we added the project file and build some skeletons for the modules.
+- then we started working on html files.
+- We started making tests for the modules and functions
+- after the test building we started writing the functions.
+- fixing some damn conflicts.
