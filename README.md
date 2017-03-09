@@ -14,9 +14,9 @@ Our app will:
 - We discussed the architecture and required files in the repo
 - Build the skeleton files
 
-![alt tag](Week3-Khan-ElBash/Assets/P70307-153410.jpg)
+![alt tag](/Assets/P70307-153410.jpg)
 
-![alt tag](Week3-Khan-ElBash/Assets/P70307-153410.jpg)
+![alt tag](/Assets/P70307-153445.jpg)
 
 ## User Stories
 A user logs on to the website and wants to search for their favourite film. They should:
