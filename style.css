@@ -1,6 +1,26 @@
 body{
   background: rgba(0 ,0 ,0 ,0.2);
 }
+@media screen and (min-width: 320px) and (max-width: 769px) {
+  button{
+    margin-top: 5px;
+    background: lightgreen;
+  }
+  p{
+    background: lightgreen;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 319px) {
+  button{
+    margin-top: 3px;
+    background: red;
+  }
+  p{
+    background: red;
+  }
+}
+
 input{
   margin-right: 30px;
   border-radius: 5px;
