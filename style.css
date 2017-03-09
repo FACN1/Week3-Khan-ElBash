@@ -18,6 +18,14 @@ form{
   margin-top: 30px;
   text-align: center;
 }
-.infoMovie{
-  background: #ADD8E6;
+header{
+  text-align: center;
+}
+h1{
+  font-family: 'Bree Serif', serif;
+  color: blue;
+}
+p{
+  font-family: 'Righteous', cursive;
+  color: blue;
 }
